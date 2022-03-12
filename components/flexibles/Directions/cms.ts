@@ -1,10 +1,10 @@
 import type NetlifyCmsField from '../../../interfaces/NetlifyCmsField'
 
 export default <NetlifyCmsField>{
-  label: 'Text',
-  name: 'rich-text',
+  label: 'Directions',
+  name: 'directions',
   widget: 'object',
-  summary: 'Rich text | {{fields.title}}',
+  summary: 'Directions',
   fields: [
     {
       label: 'Title',
@@ -33,26 +33,10 @@ export default <NetlifyCmsField>{
       modes: ['rich_text'],
     },
     {
-      label: 'Alignment',
-      name: 'alignment',
-      widget: 'select',
-      options: ['right', 'left'],
-      default: 'left',
-      required: true,
-    },
-    {
-      label: 'Heading type',
-      name: 'heading',
-      widget: 'select',
-      options: ['h1', 'h2'],
-      default: 'h2',
-      required: true,
-    },
-    {
       label: 'Component',
       name: 'component',
       widget: 'hidden',
-      default: 'rich-text',
+      default: 'directions',
     },
   ],
 }

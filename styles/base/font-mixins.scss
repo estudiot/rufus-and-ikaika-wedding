@@ -2,8 +2,8 @@
 $system-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
   Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 
-$sans-serif: $system-font;
-$serif: serif;
+$sans-serif: 'Open sans', $system-font;
+$serif: 'Black-Stanky', serif;
 
 $normal: normal;
 $bold: bold;
@@ -51,11 +51,11 @@ $bold: bold;
  * Heading
  */
 @mixin heading-huge {
-  @include regular-font;
+  @include serif-font;
   margin-top: 0;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.5rem;
   color: $primary-color;
-  font-weight: $bold;
+  font-weight: $normal;
   font-size: rem(50);
   line-height: 1;
 
@@ -67,37 +67,37 @@ $bold: bold;
   }
 }
 @mixin heading-large {
-  @include regular-font;
+  @include serif-font;
   margin-top: 0;
-  margin-bottom: 0.5em;
+  margin-bottom: 2rem;
   color: $primary-color;
-  font-weight: $bold;
-  font-size: rem(32);
+  font-weight: $normal;
+  font-size: rem(90);
   line-height: 1;
 
   @include bp-min(medium) {
-    font-size: rem(50);
+    font-size: rem(150);
   }
 }
 @mixin heading-medium {
-  @include regular-font;
+  @include serif-font;
   margin-top: 0;
-  margin-bottom: 0.75em;
+  margin-bottom: 0.75rem;
   color: $primary-color;
-  font-weight: $bold;
-  font-size: rem(28);
+  font-weight: $normal;
+  font-size: rem(70);
   line-height: 1;
 
   @include bp-min(medium) {
-    font-size: rem(36);
+    font-size: rem(90);
   }
 }
 @mixin heading-small {
-  @include regular-font;
+  @include serif-font;
   margin-top: 0;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.5rem;
   color: $primary-color;
-  font-weight: $bold;
+  font-weight: $normal;
   font-size: rem(23);
   line-height: 1;
 
@@ -106,11 +106,11 @@ $bold: bold;
   }
 }
 @mixin heading-tiny {
-  @include regular-font;
+  @include serif-font;
   margin-top: 0;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.5rem;
   color: $primary-color;
-  font-weight: $bold;
+  font-weight: $normal;
   font-size: rem(20);
   line-height: 1;
 

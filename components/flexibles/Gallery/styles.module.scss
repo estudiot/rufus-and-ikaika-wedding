@@ -1,0 +1,19 @@
+@import '../../../styles/base.scss';
+
+.gallery__inner {
+  @include block(medium);
+}
+.gallery__inner-inner {
+  @include block(small);
+}
+
+.gallery__image-container {
+  overflow-x: auto;
+  display: flex;
+  margin-top: gap(medium);
+}
+
+.gallery__image {
+  width: auto;
+  height: 35vh;
+}

@@ -1,0 +1,25 @@
+@import '../../../styles/base.scss';
+
+.directions {
+  @include row(small);
+  @include block(medium-large);
+}
+
+.directions__link {
+  overflow: hidden;
+  display: block;
+}
+
+.directions__link:hover img,
+.directions__link:focus img {
+  transform: scale(1.02);
+}
+
+.directions__link img {
+  transition: 0.2s ease-in-out transform;
+}
+
+.directions__explanation {
+  margin-top: gap(medium-large);
+  text-align: center;
+}

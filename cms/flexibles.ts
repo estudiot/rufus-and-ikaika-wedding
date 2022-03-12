@@ -1,5 +1,7 @@
-import largeText from '../components/flexibles/LargeText/cms'
-import textMedia from '../components/flexibles/TextMedia/cms'
 import richText from '../components/flexibles/RichText/cms'
+import Directions from '../components/flexibles/Directions/cms'
+import Gallery from '../components/flexibles/Gallery/cms'
 
-export default [richText, largeText, textMedia]
+const flexibles = [richText, Directions, Gallery]
+
+export default flexibles

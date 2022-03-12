@@ -1,0 +1,13 @@
+@import '../../styles/base.scss';
+
+.default {
+  padding-top: 10rem;
+}
+
+.default__leaves {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: max(15rem, 30vw);
+}
