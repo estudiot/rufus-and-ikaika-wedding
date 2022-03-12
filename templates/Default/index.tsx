@@ -14,10 +14,10 @@ export default function DefaultTemplate({ title, sections, seo }: Page) {
     if (!current) return
 
     const handleSubmit = (event: any) => {
-      // submitting!
       event.preventDefault()
-      const myForm = current.getElementById('some')
-      const formData: any = new FormData(myForm)
+      if (!current) return
+      // submitting!
+      const formData: any = new FormData(current)
       fetch('/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -45,9 +45,9 @@ export default function DefaultTemplate({ title, sections, seo }: Page) {
           alt=""
         />
         {/* @ts-ignore */}
-        <form action="" ref={formRef} netlify>
+        <form action="" ref={formRef} netlify="true" data-netlify="true">
           <label htmlFor="">some</label>
-          <input type="text" id="some" />
+          <input type="text" name="foo" />
 
           <button>Submit!</button>
         </form>
