@@ -7,7 +7,7 @@ sections:
     alignment: right
     heading: h1
     component: rich-text
-    title: Rufus and Ikaika
+    title: Rufus & Ikaika
     text: "**Lorem Ipsum** is simply dummy text of the printing and typesetting
       industry. Lorem Ipsum has been the industry's standard dummy text ever
       since the 1500s, when an unknown printer took a galley of type and
@@ -66,7 +66,7 @@ sections:
     title: Hoe kom ik er
     text: Hier wat meer info over de venue!
 seo:
-  pageTitle: sfds
-  pageDescription: sdfsf
-  ogImage: /images/stock.jpg
+  pageTitle: Rufus & Ikaika
+  pageDescription: Rufus & Ikaika
+  ogImage: /images/leaves.jpg
 ---
