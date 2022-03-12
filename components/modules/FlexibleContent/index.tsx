@@ -5,6 +5,7 @@ import TextMedia from '../../flexibles/TextMedia'
 import RichText from '../../flexibles/RichText'
 import Directions from '../../flexibles/Directions'
 import Gallery from '../../flexibles/Gallery'
+import RsvpForm from '../../flexibles/RsvpForm'
 
 export default function FlexibleContent({
   sections,
@@ -26,6 +27,9 @@ export default function FlexibleContent({
         }
         if (section.component === 'gallery') {
           return <Gallery key={`flexible-content-${index}`} {...section} />
+        }
+        if (section.component === 'rsvp-form') {
+          return <RsvpForm key={`flexible-content-${index}`} {...section} />
         }
 
         return null

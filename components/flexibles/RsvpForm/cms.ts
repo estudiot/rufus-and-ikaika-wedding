@@ -1,0 +1,48 @@
+import type NetlifyCmsField from '../../../interfaces/NetlifyCmsField'
+
+export default <NetlifyCmsField>{
+  label: 'Rsvp form',
+  name: 'rsvp-form',
+  widget: 'object',
+  summary: 'Rsvp formulier',
+  fields: [
+    {
+      label: 'Title',
+      name: 'title',
+      widget: 'string',
+      required: true,
+    },
+    {
+      label: 'Text',
+      name: 'text',
+      widget: 'markdown',
+      required: true,
+      buttons: [
+        'bold',
+        'italic',
+        'link',
+        'heading-two',
+        'heading-three',
+        'heading-four',
+        'heading-five',
+        'heading-six',
+        'bulleted-list',
+        'numbered-list',
+      ],
+      editor_components: [],
+      modes: ['rich_text'],
+    },
+    {
+      label: 'Bericht als de rsvp is doorgegeven',
+      name: 'successMessage',
+      widget: 'string',
+      required: true,
+    },
+    {
+      label: 'Component',
+      name: 'component',
+      widget: 'hidden',
+      default: 'rsvp-form',
+    },
+  ],
+}

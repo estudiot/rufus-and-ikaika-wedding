@@ -17,6 +17,11 @@ sections:
       Letraset sheets containing Lorem Ipsum passages, and more recently with
       desktop publishing software like Aldus PageMaker including versions of
       Lorem Ipsum."
+  - type: rsvp-form
+    component: rsvp-form
+    title: RSVP
+    text: Kom je ook? Laat het ons even weten, dan houden we daar rekening mee!
+    successMessage: Bedankt!
   - type: text
     component: gallery
     title: Dresscode

@@ -98,11 +98,11 @@ $bold: bold;
   margin-bottom: 0.5rem;
   color: $primary-color;
   font-weight: $normal;
-  font-size: rem(23);
+  font-size: rem(50);
   line-height: 1;
 
   @include bp-min(medium) {
-    font-size: rem(27);
+    font-size: rem(70);
   }
 }
 @mixin heading-tiny {

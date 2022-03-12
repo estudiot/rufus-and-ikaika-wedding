@@ -1,0 +1,125 @@
+@import '../../../styles/base.scss';
+
+.rsvp-form {
+  @include row(small);
+  @include block(medium);
+}
+
+.rsvp-form__fieldset {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.rsvp-form__title {
+  @include heading-medium;
+}
+
+.rsvp-form__fields {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @include bp-min(750) {
+    flex-direction: row;
+  }
+}
+
+.rsvp-form__item {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-direction: column;
+  margin-top: gap(large);
+  margin-right: gap(small);
+}
+
+.rsvp-form__item:nth-of-type(2) {
+  flex-grow: 2;
+}
+.rsvp-form__item:last-of-type {
+  max-width: 12rem;
+}
+
+.rsvp-form label {
+  font-size: 16px;
+}
+
+.rsvp-form input {
+  padding: gap(small) 0;
+  color: $secondary-color;
+  font-family: inherit;
+  font-weight: normal;
+  font-size: 18px;
+  border: none;
+  box-shadow: 0 -1px 0 $primary-color inset;
+  transition: 0.2s ease-in-out box-shadow;
+}
+.rsvp-form input:hover,
+.rsvp-form input:focus {
+  box-shadow: 0 -3px 0 rgba($primary-color, 0.5) inset;
+  outline: none;
+}
+
+.rsvp-form__submit {
+  @include bare-button;
+  @include heading-small;
+  margin-top: gap(large);
+  margin-left: auto;
+  box-shadow: 0 -1px 0 $primary-color inset;
+  transition: 0.2s ease-in-out box-shadow;
+}
+
+.rsvp-form__submit:hover,
+.rsvp-form__submit:focus {
+  box-shadow: 0 -3px 0 rgba($primary-color, 0.5) inset;
+  outline: none;
+}
+
+.success-message {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: $white;
+  transition: 0.3s ease-in-out opacity;
+}
+
+.success-message[data-visible='success'] {
+  opacity: 1;
+}
+
+.success-message__title {
+  text-align: center;
+}
+.failure-message {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: $white;
+  transition: 0.3s ease-in-out opacity;
+}
+
+.failure-message[data-visible='failure'] {
+  opacity: 1;
+}
+
+.failure-message__title {
+  text-align: center;
+}
