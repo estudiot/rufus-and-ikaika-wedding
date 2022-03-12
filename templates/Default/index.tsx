@@ -44,7 +44,8 @@ export default function DefaultTemplate({ title, sections, seo }: Page) {
           src="/images/leaves.jpg"
           alt=""
         />
-        <form action="" netlify ref={formRef}>
+        {/* @ts-ignore */}
+        <form action="" ref={formRef} netlify>
           <label htmlFor="">some</label>
           <input type="text" id="some" />
 
