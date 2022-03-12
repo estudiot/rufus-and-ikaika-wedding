@@ -44,8 +44,15 @@ export default function DefaultTemplate({ title, sections, seo }: Page) {
           src="/images/leaves.jpg"
           alt=""
         />
-        {/* @ts-ignore */}
-        <form action="" ref={formRef} netlify="true" data-netlify="true">
+        <form
+          action=""
+          ref={formRef}
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          name="rsvp"
+        >
+          <input type="hidden" name="form-name" value="rsvp" />
+
           <label htmlFor="">some</label>
           <input type="text" name="foo" />
 
